@@ -1,7 +1,12 @@
-
-
 def sample1():
-    return 'sample1'
+    """
+    dummy function
+    """
+    return "sample1"
+
 
 def sample2():
-    return 'sample2'
+    """
+    dummy function
+    """
+    return "sample2"
