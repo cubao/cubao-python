@@ -103,6 +103,7 @@ classifiers = [  # Optional
 # For an analysis of this field vs pip's requirements files see:
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 dependencies = [ # Optional
+  "fire",
   "loguru",
   "tqdm",
 ]
@@ -111,7 +112,7 @@ dependencies = [ # Optional
 # dependencies). Users will be able to install these using the "extras"
 # syntax, for example:
 #
-#   $ pip install sampleproject[dev]
+#   $ pip install cubao-python[dev]
 #
 # Similar to `dependencies` above, these must be valid existing
 # projects.
@@ -136,15 +137,15 @@ test = ["coverage"]
 
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
-[project.scripts]  # Optional
-sample = "sample:main"
+# [project.scripts]  # Optional
+# sample = "sample:main"
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
-package-data = {"sample" = ["*.dat"]}
+package-data = {"cubao_python" = ["*.dat"]}
 
 [build-system]
 # These are the assumed default build requirements from pip:
