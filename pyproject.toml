@@ -143,6 +143,9 @@ test = ["coverage"]
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+# we use flat-layout (also known as "adhoc")
+packages = ["cubao_python"]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
 package-data = {"cubao_python" = ["*.dat"]}
