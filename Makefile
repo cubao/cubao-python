@@ -33,6 +33,8 @@ install:
 package:
 	python3 -m build
 build: package
+list:
+	unzip -l dist/cubao_python-*.whl
 pypi_remote ?= testpypi
 upload:
 	python3 -m pip install --upgrade twine

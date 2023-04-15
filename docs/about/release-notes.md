@@ -4,13 +4,13 @@
 
 ## Upgrading
 
-To upgrade `cubao-pypi-example` to the latest version, use pip:
+To upgrade `cubao-python` to the latest version, use pip:
 
 ```bash
-pip install -U cubao-pypi-example
+pip install -U cubao-python
 ```
 
-## Version 0.0.2 (2023-04-15)
+## Version 0.0.1 (2023-04-15)
 
 *   Initial release
 
@@ -18,5 +18,5 @@ pip install -U cubao-pypi-example
 
 You can also checkout releases on:
 
--   GitHub: <https://github.com/cubao/cubao-pypi-example/releases>
--   PyPi: <https://pypi.org/project/cubao-pypi-example>
+-   GitHub: <https://github.com/cubao/cubao-python/releases>
+-   PyPi: <https://pypi.org/project/cubao-python>

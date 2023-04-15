@@ -1,4 +1,4 @@
-# pypi-example
+# cubao-python
 
 {%
    include-markdown "../README.md"
@@ -7,6 +7,6 @@
 %}
 
 <div class="text-center">
-   <a href="https://github.com/cubao/cubao-pypi-example" class="btn btn-primary" role="button">Code on GitHub</a>
-   <a href="https://pypi.org/project/cubao-pypi-example" class="btn btn-primary" role="button">Package on PyPi</a>
+   <a href="https://github.com/cubao/cubao-python" class="btn btn-primary" role="button">Code on GitHub</a>
+   <a href="https://pypi.org/project/cubao-python" class="btn btn-primary" role="button">Package on PyPi</a>
 </div>

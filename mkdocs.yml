@@ -1,9 +1,9 @@
-site_name: pypi-example
-site_url: https://pypi-example.readthedocs.io
-site_description: A sample project that exists for PyPUG's "Tutorial on Packaging and Distributing Projects"
+site_name: cubao-python
+site_url: https://cubao-python.readthedocs.io
+site_description: misc python scripts of cubao
 site_author: district10
 
-repo_url: https://github.com/cubao/pypi-example
+repo_url: https://github.com/cubao/cubao-python
 edit_uri: blob/main/docs/
 
 theme: readthedocs

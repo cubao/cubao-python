@@ -3,26 +3,26 @@
 # package, this name will be registered for you. It will determine how
 # users can install this project, e.g.:
 #
-# $ pip install cubao-pypi-example
+# $ pip install cubao-python
 #
 # And where it will live on PyPI: https://pypi.org/project/sampleproject/
 #
 # There are some restrictions on what makes a valid project name
 # specification here:
 # https://packaging.python.org/specifications/core-metadata/#name
-name = "cubao-pypi-example"  # Required
+name = "cubao-python"  # Required
 
 # Versions should comply with PEP 440:
 # https://www.python.org/dev/peps/pep-0440/
 #
 # For a discussion on single-sourcing the version, see
 # https://packaging.python.org/guides/single-sourcing-package-version/
-version = "0.0.2"  # Required
+version = "0.0.1"  # Required
 
 # This is a one-line description or tagline of what your project does. This
 # corresponds to the "Summary" metadata field:
 # https://packaging.python.org/specifications/core-metadata/#summary
-description = "A sample Python project"  # Optional
+description = "misc python scripts of cubao"  # Optional
 
 # This is an optional longer description of your project that represents
 # the body of text which users will see when they visit PyPI.
@@ -103,6 +103,7 @@ classifiers = [  # Optional
 # For an analysis of this field vs pip's requirements files see:
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 dependencies = [ # Optional
+  "fire",
   "loguru",
   "tqdm",
 ]
@@ -111,7 +112,7 @@ dependencies = [ # Optional
 # dependencies). Users will be able to install these using the "extras"
 # syntax, for example:
 #
-#   $ pip install sampleproject[dev]
+#   $ pip install cubao-python[dev]
 #
 # Similar to `dependencies` above, these must be valid existing
 # projects.
@@ -130,21 +131,24 @@ test = ["coverage"]
 # maintainers, and where to support the project financially. The key is
 # what's used to render the link text on PyPI.
 [project.urls]  # Optional
-"Homepage" = "https://github.com/cubao/cubao-pypi-example"
-"Bug Reports" = "https://github.com/cubao/cubao-pypi-example/issues"
-"Source" = "https://github.com/cubao/cubao-pypi-example/"
+"Homepage" = "https://github.com/cubao/cubao-python"
+"Bug Reports" = "https://github.com/cubao/cubao-python"
+"Source" = "https://github.com/cubao/cubao-python"
 
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
-[project.scripts]  # Optional
-sample = "sample:main"
+# [project.scripts]  # Optional
+# sample = "sample:main"
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
 [tool.setuptools]
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+# we use flat-layout (also known as "adhoc")
+packages = ["cubao_python"]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
-package-data = {"sample" = ["*.dat"]}
+package-data = {"cubao_python" = ["*.dat"]}
 
 [build-system]
 # These are the assumed default build requirements from pip:
